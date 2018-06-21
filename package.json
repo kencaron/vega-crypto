@@ -1,0 +1,30 @@
+{
+  "name": "vega-crypto",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://kencaron.github.io",
+  "devDependencies": {
+    "eslint-plugin-prettier": "^2.6.0",
+    "preact-scripts": "0.3.0-alpha",
+    "prettier": "^1.13.5",
+    "react-scripts": "^1.1.4",
+    "react-test-renderer": "^15.3.0"
+  },
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "preact": "^5.6.0",
+    "prop-types": "^15.6.1",
+    "vega": "^4.0.0-rc.2"
+  },
+  "scripts": {
+    "start": "preact-scripts start",
+    "build": "preact-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "preact-scripts eject",
+    "test": "preact-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/preact-scripts/config/eslint.js"
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Bitcoin",
+    "symbol": "BTC"
+  },
+  {
+    "name": "Ethereum",
+    "symbol": "ETH"
+  },
+  {
+    "name": "Ripple",
+    "symbol": "XRP"
+  },
+  {
+    "name": "Bitcoin Cash",
+    "symbol": "BCH"
+  },
+  {
+    "name": "EOS",
+    "symbol": "EOS"
+  },
+  {
+    "name": "Litecoin",
+    "symbol": "LTC"
+  },
+  {
+    "name": "Dash",
+    "symbol": "DASH"
+  },
+  {
+    "name": "Monero",
+    "symbol": "XMR"
+  },
+  {
+    "name": "Ethereum Classic",
+    "symbol": "ETC"
+  },
+  {
+    "name": "Zcash",
+    "symbol": "ZEC"
+  }
+]

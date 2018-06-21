@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v4.json",
+  "width": 500,
+  "height": 200,
+  "padding": 5,
+
+  "signals": [
+    {
+      "name": "interpolate",
+      "value": "linear"
+    }
+  ],
+
+  "data": [
+    {
+      "name": "table"
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "timestamp",
+      "type": "time",
+      "range": "width",
+      "domain": { "data": "table", "field": "timestamp" }
+    },
+    {
+      "name": "price",
+      "type": "linear",
+      "range": "height",
+      "nice": true,
+      "zero": false,
+      "domain": { "data": "table", "field": "price" }
+    }
+  ],
+  "axes": [
+    { "orient": "bottom", "scale": "timestamp", "format": "%I:%M" },
+    { "orient": "left", "scale": "price", "format": "$,.2f" }
+  ],
+  "marks": [
+    {
+      "type": "line",
+      "from": { "data": "table" },
+      "encode": {
+        "enter": {
+          "x": { "scale": "timestamp", "field": "timestamp" },
+          "y": { "scale": "price", "field": "price" },
+          "strokeWidth": { "value": 2 }
+        },
+        "update": {
+          "x": { "scale": "timestamp", "field": "timestamp" },
+          "y": { "scale": "price", "field": "price" }
+        },
+        "hover": {
+          "fillOpacity": { "value": 0.5 }
+        }
+      }
+    }
+  ]
+}
